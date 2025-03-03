@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Explaining and testing git commits</title>
+
+</head>
+
+<body>
+
+    <p>This will be a test for structure of a git commit</p>
+
+    <p>Here is the structure of a proper git commit</p>
+
+    <p>type [optional scope]: description </p>
+    <p>[optional body]</p>
+    <p>[optional footer(s)]</p>
+
+    <p>There are different types that we can use to describe the beginning of the commit</p>
+
+    <p><strong>fix/feat/build/chore/ci/docs/style/refactor/test/perf</strong> - There are the most common ones</p>
+
+
+    <h2>Here is an example of how the type would be committed</h2>
+
+    <p><strong>fix/feat/build</strong> [optional scope]: description</p>
+    <p>[optional body]</p>
+    <p>[optional footer(s)]</p>
+
+    <!-- <h2>Here is another example of how the [optional scope] would be committed</h2>
+    <p><strong><em>fix/feat/build</em></strong> BREAKING CHANGE: description</p>
+    <p>[optional body]</p>
+    <p>[optional footer(s)]</p>
+
+    <p><strong>Notice how the [optional scope]: was replaced by <em>BREAKING CHANGE</em></strong></p>
+    <p>BREAKING CHANGE is a commit that has a footer or appends a ! after the type/scope ie introduces a breacking API
+        change</p>
+    <p>In other words a BREAKING CHANGE can be parts of commits of any type</p> -->
+
+    <h2>Here is a how the [optional scope] would be committed</h2>
+
+    <p>fix/feat/build <strong>(Explains the scope of the "change" and it has to be surrounded by parentheses)</strong>!:
+        description
+    </p>
+    <p>[optional body]</p>
+    <p>[optional footer(s)]</p>
+
+    <h2>Here is how a BREAKING CHANGE would be commited</h2>
+
+    <p>fix/feat/build [optional scope]<strong>If this
+            commit has any BREAKING CHANGES add a BREAKING CHANGE: or a ! to it</strong>:
+        description
+    </p>
+    <p>[optional body]</p>
+    <p>[optional footer(s)]</p>
+
+    <p><em>A BREAKING change is a commit that has a footer BREAKING CHANGE: or a ! after the type/scope which introduces
+            a <em>breaking API change to the program, commit, or project</em> </em></p>
+
+
+    <h2>Here is how a description would be committed</h2>
+    <p><strong>fix/feat/build</strong> [optional scope]: Usually short primitive message explaining what has been done
+        like <em>add</em></p>
+    <p>[optional body]</p>
+    <p>[optional footer(s)]</p>
+
+
+    <h2>Here is the body of a proper commit</h2>
+    
+    <p><strong>fix/feat/build</strong> [optional scope]: description</p>
+    <p>Introduce a request id and a reference to latest request. Dismiss</p>
+    <p>incoming responses other than from latest request.</p>
+
+    <p>[optional footer(s)]</p>
+
+
+
+
+
+</body>
+
+</html>
